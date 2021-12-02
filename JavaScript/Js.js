@@ -3,16 +3,6 @@ var SeccionesOl = document.querySelector('.Ol');
 var TarjetaSeccion = []; 
 var IconoServicio = []; 
 var TituloServicioTarjeta = []; 
-const IdNombre = document.querySelector('#Nombre');
-const IdNumero = document.querySelector('#Numero');
-const IdEmail = document.querySelector('#Email');
-const IdMensaje = document.querySelector('#Mensaje');
-const Span1 = document.getElementsByClassName('1');
-const Span2 = document.getElementsByClassName('2');
-const Span3 = document.getElementsByClassName('3');
-const Span4 = document.getElementsByClassName('4');
-
-
 
 function AnimarServicios(_NumeroServicio)
 {
