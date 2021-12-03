@@ -16,6 +16,7 @@
 			$header.= "Reply-To: noreply@example.com" . "\r\n";
 			$header.= "X-Mailer: PHP/" . phpversion();
 			mail("carloscharlie4td@hotmail.com", $Asunto, $Mensaje, $header);
+			header('Location: index.php');
 		}
 	}
 
