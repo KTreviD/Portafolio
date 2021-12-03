@@ -8,6 +8,9 @@
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
+	<?php
+		require_once('contacto.php');
+	?>
 	<header class="Header">
 		<nav class="Nav">
 			
@@ -205,7 +208,7 @@
 		</section>
 		<section class="Main__ContactoC" id="Contacto">
 			<h2 class="TituloSecciones">Contactame</h2>
-			<form class="FormContacto">
+			<form class="FormContacto" method="post">
 				<div class="FormContacto__Iconos">
 					<i class="fal fa-user IconoContacto"></i>
 					<div class="BarraContactoInfo">
@@ -227,7 +230,7 @@
 						<span></span>
 						<span></span>
 						<span></span>
-						<input class="Generales" type="text" name="Nombre" placeholder="Nombre" id="Nombre">
+						<input class="Generales" type="text" name="Nombre" placeholder="Nombre" id="Nombre" required="">
 					</div>
 					
 					<label class="Labels" for="Numero">Numero</label>
@@ -246,7 +249,7 @@
 						<span class="3"></span>
 						<span class="3"></span>
 						<span class="3"></span>
-						<input class="Generales" type="text" name="Email" placeholder="Email" id="Email">
+						<input class="Generales" type="text" name="Email" placeholder="Email" id="Email" required="">
 					</div>
 		    	    
 		    	    <label class="Labels" for="Mensaje">Mensaje *</label>
@@ -255,7 +258,7 @@
 						<span class="4"></span>
 						<span class="4"></span>
 						<span class="4"></span>
-		    	    	<textarea class="Generales TextoArriba" name="Mensaje" placeholder="Escribe tu mensaje aqui" id="Mensaje"></textarea> 
+		    	    	<textarea class="Generales TextoArriba" name="Mensaje" placeholder="Escribe tu mensaje aqui" id="Mensaje" required=""></textarea> 
 		    	    </div>
 		    	    
 		       		<button class="Submit" type="submit" name="Contactar">Mandar mensaje</button>
@@ -275,4 +278,5 @@
 	</footer>
 	<script type="text/javascript" src="JavaScript/Js.js"></script>
 </body>
+
 </html>
