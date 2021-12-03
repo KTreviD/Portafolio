@@ -16,9 +16,6 @@
 			$header.= "Reply-To: noreply@example.com" . "\r\n";
 			$header.= "X-Mailer: PHP/" . phpversion();
 			mail("carloscharlie4td@hotmail.com", $Asunto, $Mensaje, $header);
-			unset($_POST['Nombre']);
-			unset($_POST['Email']);
-			unset($_POST['Mensaje']);
 		}
 	}
 

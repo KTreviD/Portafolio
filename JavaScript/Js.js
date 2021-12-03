@@ -37,3 +37,6 @@ MenuBoton.addEventListener('click', () =>
 	MenuBoton.classList.toggle("Activo");
 	SeccionesOl.classList.toggle("TaparPoner");
 });
+if ( window.history.replaceState ) {
+  window.history.replaceState( null, null, window.location.href );
+}
