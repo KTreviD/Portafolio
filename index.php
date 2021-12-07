@@ -14,16 +14,10 @@
 	<header class="Header">
 		<nav class="Nav">
 			
-				<a href="index.html" class="A">
-					<div class="Logo">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</a>
+				<div class="A">
+						<img src="BanderasSvg/mx.svg" class="Bandera">
+						<img src="BanderasSvg/us.svg" class="Bandera BDerecha">
+				</div>
 			
 			<div class="SeccionesMenu">
 				<ol class="Ol TaparPoner">
@@ -75,8 +69,27 @@
 		</section>
 
 		<section class="Main__SobreMiC" id="SobreMi">
-			
+				<h2 class="TituloSecciones">Sobre mi</h2>
+				<div class="ContenedorSobreMi">
+					<div class="Texto">
+						<h4 class="TextoSobreMi">
+							Hola, me llamo Carlos y soy desarrollador frontend, aprendi a programar con C++, no solo he programado paginas web, tambien he programado videojuegos para Unity3D en C#.
+							<br>
+							<br>
+							Empeze a programar porque soy una persona a la cual le gusta aprender y le gustan los retos, me gusta mucho resolver todos los problemas que te encuentras a la hora de programar.
+							<br>
+							<br>
+							Soy una persona bilingue, una persona a la cual le encantan los deportes, una persona sociable, una persona con muchas ganas de aprender y mejorar para lograr sus metas siendo feliz en el proceso.
+						</h4>
+					</div>
+					<div class="ImagenMiaContenedor">
+						<img src="FotoMia.PNG" class="Foto">
+					</div>
+
+				</div>
+				
 		</section>
+
 		<section class="Main__ServiciosC" id="Servicios">
 			<h2 class="TituloSecciones">Servicios</h2>
 			<div class="ContenedorServicios">
@@ -204,7 +217,19 @@
 			<h4 class="TextoTecnologias">Cuento con los conocimientos necesarios sobre backend para comunicarme eficientemente con el.</h4>
 		</section>
 		<section class="Main__ProyectosC" id="Proyectos">
-			
+			<h2 class="TituloSecciones">Proyectos</h2>
+			<div class="ContenedorProyecto">
+				<a href="objetosusuarios.com" class="LinkProyecto MrR">
+					<div class="Proyectos">
+						
+					</div>
+				</a>
+				<a href="nodeestadisticasclima.com" class="LinkProyecto">
+					<div class="Proyectos">
+						
+					</div>
+				</a>
+			</div>
 		</section>
 		<section class="Main__ContactoC" id="Contacto">
 			<h2 class="TituloSecciones">Contactame</h2>
@@ -215,7 +240,7 @@
 						<a target="_blank" href="mailto:carloscharlie4td@hotmail.com" class="Links">
 							<i class="fas fa-envelope-square IconosIzquierdaContacto"></i>
 						</a>
-						<a target="_blank" href="https://www.github.com" class="Links">
+						<a target="_blank" href="https://github.com/KTreviD?tab=repositories" class="Links">
 							<i class="fab fa-github-square IconosIzquierdaContacto"></i>
 						</a>
 						<a target="_blank" href="https://www.instagram.com/dssssstc" class="Links">

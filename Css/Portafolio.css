@@ -57,49 +57,23 @@ body
 {
     position: relative;
     height: 52px;
-    width: 52px;
+    width: 136px;
     left: 10px;
 }
-.Logo span
+.Bandera
 {
-    position: absolute;
-    width: 52px;
-    height: 3px;
-    background-color: #FF19EE;
-    transition: 1s;
-    top: -1px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    cursor: pointer;
+    top: 8px;
+    left: 2px;
 }
-.Logo span:nth-child(1)
+.BDerecha
 {
-    transform: rotate(90deg);
-    width: 52px;
-    left: -25px;
-    top: 24px;
-}
-.Logo span:nth-child(2)
-{
-    width: 52px;
-    top: 49px;
-}
-.Logo span:nth-child(3)
-{
-    transform: rotate(90deg);
-    width: 52px;
-    left: 25px;
-    top: 24px;
-}
-.Logo span:nth-child(4)
-{
-    transform: rotate(90deg);
-    width: 36px;
-    left: 8px;
-    top: 24px;
-}
-.Logo span:nth-child(5)
-{
-    width: 32px;
-    left: 10px;
-    top: 7px;
+    margin-left: 8px;
 }
                                                 /*Secciones Menu*/
 .SeccionesMenu
@@ -112,7 +86,7 @@ body
     list-style: none;
     position: relative;
     top: -1.2vh;
-    left: 64px;
+    left: -28px;
     transition: 1.2s;
 }
 .Li
@@ -268,14 +242,15 @@ body
 {
     top: 40px;
     position: absolute;
-    left: 170px;
+    left: 148px;
     color: #fff;
     font-family: Verdana;
+    font-size: 22px;
 }
 .NombreTitulo
 {
     position: absolute;
-    left: 170px;
+    left: 148px;
     font-size: 64px;
     top: 48px;
     color: #fff;
@@ -286,25 +261,26 @@ body
 {
     top: 198px;
     position: absolute;
-    left: 170px;
+    left: 148px;
     width: 50%;
     color: #fff;
     font-family: Verdana;
+    font-size: 22px;
 }
 .IconoInicio
 {
     position: absolute;
-    left: calc(100% - 310px);
+    left: calc(100% - 322px);
     font-size: 140px;
-    top: 210px;
+    top: 206px;
     color: #fff;
 }
 .IconoInicio2
 {
     position: absolute;
-    left: calc(100% - 460px);
+    left: calc(100% - 472px);
     font-size: 140px;
-    top: 214px;
+    top: 210px;
     color: #fff;
 }
                                             /*Titulos*/
@@ -350,7 +326,50 @@ body
     position: relative;
     height: calc(100vh - 72px);
     width: 100%;
-    background-color: red;
+    background-color: #020c1b;
+}
+.ContenedorSobreMi
+{
+    position: relative;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 450px;
+    background-color: #012233;
+    box-shadow: 0px 6px 10px black;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+.Texto
+{
+    position: relative;
+    width: 520px;
+    height: 450px;
+    margin-left: 32px;
+    bottom: 4px;
+}
+.TextoSobreMi
+{
+    width: auto;
+    position: relative;
+    top: 6px;
+    color: #fff;
+    font-size: 24px;
+}
+.ImagenMiaContenedor
+{
+    width: 300px;
+    height: 450px;  
+}
+.Foto
+{
+    position: relative;
+    left: 13px;
+    top: 36px;
+    width: 84%;
+    border-radius: 8px;
+    display: inline-block;
 }
                                             /*Servicios*/
 .Main__ServiciosC
@@ -545,7 +564,33 @@ body
     position: relative;
     height: calc(100vh - 72px);
     width: 100%;
-    background-color: purple;
+}
+.ContenedorProyecto
+{
+    position: relative;
+    width: 880px;
+    background-color: #012233;
+    height: 420px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 6px 10px black;
+    border-radius: 8px;
+}
+.Proyectos
+{
+    position: relative;
+    display: inline-block;
+    width: 230px;
+    height: 280px;
+    background-color: red;
+    margin-left: 70px;
+    top: 70px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 10px black;
+}
+.MrR
+{
+    margin-right: 190px;
 }
                                             /*Contactos*/
 .Main__ContactoC
