@@ -240,7 +240,7 @@ body
 }
 .PresentarNombre
 {
-    top: 40px;
+    top: 44px;
     position: absolute;
     left: 148px;
     color: #fff;
@@ -252,14 +252,14 @@ body
     position: absolute;
     left: 148px;
     font-size: 64px;
-    top: 48px;
+    top: 52px;
     color: #fff;
     font-family: Verdana;
     font-weight: bolder;
 }
 .TextoBreveInicio
 {
-    top: 198px;
+    top: 202px;
     position: absolute;
     left: 148px;
     width: 50%;
@@ -272,7 +272,7 @@ body
     position: absolute;
     left: calc(100% - 322px);
     font-size: 140px;
-    top: 206px;
+    top: 212px;
     color: #fff;
 }
 .IconoInicio2
@@ -280,7 +280,7 @@ body
     position: absolute;
     left: calc(100% - 472px);
     font-size: 140px;
-    top: 210px;
+    top: 216px;
     color: #fff;
 }
                                             /*Titulos*/
@@ -293,6 +293,7 @@ body
     top: -4px;
     font-size: 2em;
     transform: translateX(-50%);
+    font-family: 'Font Awesome 5 Pro';
 }
 .TituloSecciones::before
 {
@@ -353,9 +354,9 @@ body
 {
     width: auto;
     position: relative;
-    top: 6px;
+    top: 16px;
     color: #fff;
-    font-size: 24px;
+    font-size: 22px;
 }
 .ImagenMiaContenedor
 {
@@ -436,10 +437,13 @@ body
 {
     position: absolute;
     color: #fff;
+    text-align: center;
+    width: 200px;
     left: 50%;
-    font-size: 19px;
+    font-size: 26px;
     transform: translateX(-50%);
-    top: 124px;
+    top: 113px;
+    font-family:'Font Awesome 5 Pro';
 }
 .IconosServicios
 {
