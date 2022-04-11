@@ -37,6 +37,8 @@ var TextoServicioT5 = document.querySelector("#TextoServicioT5");
 var TextoServicioT6 = document.querySelector("#TextoServicioT6");
 var NombreCT = document.querySelector("#Nombre");
 var MensajeCT = document.querySelector("#Mensaje");
+var TextoProyectoT1 = document.querySelector('#TextoProyectoT1');
+var TextoProyectoT2 = document.querySelector('#TextoProyectoT2');
 
 function LenguaMxF()
 {
@@ -52,7 +54,7 @@ function LenguaMxF()
 	ProyectosTT.innerHTML = "Proyectos";
 	ContactoTT.innerHTML = "Contacto";
 	TextoPrueba.innerHTML = "Desarrollador frontend enfocado en crear la mejor experiencia para el usuario.<br/>Conozco lo necesario sobre diseño y backend para que mis paginas cumplan los objetivos deseados.";
-	TextoSobreMiT.innerHTML = "Soy Carlos, un programador autodidacta, aprendi a programar en C++, programe videojuegos para Unity3D en C# y actualmente me dedico al desarrollo Front End.<br><br>Empeze a programar porque es un area que me interesa y apasiona, soy una persona a la cual le gusta aprender, me gusta mucho resolver todos los desafios que te encuentras a la hora de programar.<br><br>Soy bilingue, alguien sociable al que le gustan las artes marciales, los gatos, las redes sociales, con muchas ganas de aprender y mejorar para lograr mis metas siendo feliz en el proceso.";
+	TextoSobreMiT.innerHTML = "Soy Carlos, programador autodidacta, aprendi a programar en C++, programe videojuegos para Unity3D en C# y actualmente me dedico al desarrollo Front End.<br><br>Empeze a programar porque es un area que me interesa y apasiona, soy una persona a la cual le gusta aprender, me gusta mucho resolver todos los desafios que te encuentras a la hora de programar.<br><br>Soy bilingue, alguien sociable al que le gustan las artes marciales, los gatos, las redes sociales, con muchas ganas de aprender para lograr mis metas siendo feliz en el proceso.";
 	DisenoIntuitivoT.innerHTML = "Diseño intuitivo";
 	RendimientoT.innerHTML = "Rendimiento";
 	ResponsivoT.innerHTML = "Responsivo";
@@ -72,6 +74,8 @@ function LenguaMxF()
 	CurriculumT.innerHTML = "Curriculum";
 	NombreCT.placeholder = "Nombre";
 	MensajeCT.placeholder = "Escribe tu mensaje aqui";
+	TextoProyectoT1.innerHTML = "Links favoritos";
+	TextoProyectoT2.innerHTML = "Tienda";
 }
 
 function LenguaUsF()
@@ -108,6 +112,8 @@ function LenguaUsF()
 	CurriculumT.innerHTML = "Resume";
 	NombreCT.placeholder = "Name";
 	MensajeCT.placeholder = "Type your message here";
+	TextoProyectoT1.innerHTML = "Favorite links";
+	TextoProyectoT2.innerHTML = "Market";
 }
 
 if(localStorage.getItem("Lengua"))
@@ -161,8 +167,45 @@ BanderaUS.addEventListener('click', () =>
 	LenguaUsF();
 });
 
+
+
+var Mascara = document.querySelector(".SeccionesCompleto");
+var MenuDesplegable = document.querySelector(".SeccionesMenu");
+var SpanBoton1 = document.querySelector('.SpanBoton1');
+var SpanBoton2 = document.querySelector('.SpanBoton2');
+var SpanBoton3 = document.querySelector('.SpanBoton3');
+
+SpanBoton1.addEventListener('click', () =>
+{
+	MenuBoton.classList.toggle("Activo");
+	Mascara.classList.toggle("AparecerMenu");
+});
+
+SpanBoton2.addEventListener('click', () =>
+{
+	MenuBoton.classList.toggle("Activo");
+	Mascara.classList.toggle("AparecerMenu");
+});
+
+SpanBoton3.addEventListener('click', () =>
+{
+	console.log("hey");
+	MenuBoton.classList.toggle("Activo");
+	Mascara.classList.toggle("AparecerMenu");
+});
+
 MenuBoton.addEventListener('click', () =>
 {
 	MenuBoton.classList.toggle("Activo");
-	SeccionesOl.classList.toggle("TaparPoner");
+	Mascara.classList.toggle("AparecerMenu");
+});
+
+window.addEventListener('click', e =>
+{
+	if(Mascara.classList.contains('AparecerMenu')
+		&& e.target != Mascara	&& e.target != MenuBoton)
+	{
+		Mascara.classList.toggle("AparecerMenu");
+		MenuBoton.classList.toggle("Activo");
+	}
 });
